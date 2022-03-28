@@ -1,0 +1,27 @@
+<%- include ('partials/header.ejs') %>
+
+<body>
+    <%- include ('partials/navbar.ejs') %>
+     <div class="container">
+        <div class="card" id="code">
+            <div class="card-header">
+                <h3>Ranking de bolsas pagas</h3>
+            </div>
+            <div class="card-body">
+                    <label>Maior valor pago: <%=maiorBolsa1%></label>
+                    <br>
+                    <label>Segundo maior valor pago: <%=maiorBolsa2%></label>
+                    <br>
+                    <label>Terceiro maior valor pago: <%=maiorBolsa3%></label>
+                    <br>
+                    <label>Menor valor pago: <%=menorBolsa1%></label>
+                    <br>
+                    <label>Segundo menor valor pago: <%=menorBolsa2%></label>
+                    <br>
+                    <label>Terceiro menor valor pago: <%=menorBolsa3%></label>
+                    <br>
+            </div>
+        </div>
+    </div>
+</body>
+<%- include ('partials/footer.ejs') %>

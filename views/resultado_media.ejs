@@ -1,0 +1,23 @@
+<%- include ('partials/header.ejs') %>
+
+<body>
+    <%- include ('partials/navbar.ejs') %>
+     <div class="container">
+        <div class="card" id="pesquisa_bolsazero">
+            <div class="card-header">
+                <h3>Valor da media anual de bolsas</h3>
+            </div>
+            <div class="card-body">
+                    <h5>Ano pesquisado <%= ano%></h5>
+                    <br>
+                    <label>Número de bolsistas:<%=' ' + bolsistas%> </label>
+                    <br>
+                    <label>Valor médio mensal das bolsas é:<%=' ' + media%> </label>
+                    <br>
+                    <label>Valor médio anual das bolsas é:<%=' ' + (media*12)%> </label>
+                    <br>
+            </div>
+        </div>
+    </div>
+</body>
+<%- include ('partials/footer.ejs') %>

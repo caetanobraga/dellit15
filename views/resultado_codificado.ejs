@@ -1,0 +1,23 @@
+<%- include ('partials/header.ejs') %>
+
+<body>
+    <%- include ('partials/navbar.ejs') %>
+     <div class="container">
+        <div class="card" id="nome_codificado">
+            <div class="card-header">
+                <h3>Dados </h3>
+            </div>
+            <div class="card-body">
+                    <label>Nome codificado:<%=' ' + codificado%> </label>
+                    <br>
+                    <label>CPF:<%=' ' + bolsista.CPF_BOLSISTA%> </label>
+                    <br>
+                    <label>Entidade de ensino:<%=' ' + bolsista.NM_ENTIDADE_ENSINO%> </label>
+                    <br>
+                    <label>Valor da bolsa:<%=' ' + bolsista.VL_BOLSISTA_PAGAMENTO%> </label>
+                    <br>
+            </div>
+        </div>
+    </div>
+</body>
+<%- include ('partials/footer.ejs') %>

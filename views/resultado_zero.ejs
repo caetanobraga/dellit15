@@ -1,0 +1,25 @@
+<%- include ('partials/header.ejs') %>
+
+<body>
+    <%- include ('partials/navbar.ejs') %>
+     <div class="container">
+        <div class="card" id="pesquisa_bolsazero">
+            <div class="card-header">
+                <h3>Bolsista Zero por ano</h3>
+            </div>
+            <div class="card-body">
+                    <h5>Ano pesquisado <%= bolsista.AN_REFERENCIA %></h5>
+                    <br>
+                    <label>Nome:<%=' ' + bolsista.NM_BOLSISTA%> </label>
+                    <br>
+                    <label>CPF:<%=' ' + bolsista.CPF_BOLSISTA%> </label>
+                    <br>
+                    <label>Entidade de ensino:<%=' ' + bolsista.NM_ENTIDADE_ENSINO%> </label>
+                    <br>
+                    <label>Valor da bolsa:<%=' ' + bolsista.VL_BOLSISTA_PAGAMENTO%> </label>
+                    <br>
+            </div>
+        </div>
+    </div>
+</body>
+<%- include ('partials/footer.ejs') %>

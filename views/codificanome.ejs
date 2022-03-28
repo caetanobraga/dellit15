@@ -1,0 +1,22 @@
+<%- include ('partials/header.ejs') %>
+
+<body>
+    <%- include ('partials/navbar.ejs') %>
+     <div class="container">
+        <div class="card" id="code">
+            <div class="card-header">
+                <h3>Dados com nome codificado</h3>
+            </div>
+            <div class="card-body">
+                <form method="POST" action="/codificaNome" >
+                    <label>Bolsista a ser pesquisado</label>
+                    <input type="text" placeholder="Dados disponíveis, anos 2013 a 2016" class="form-control" name="nome" style="text-transform:uppercase"">
+                    <br>
+                    <br><br>
+                    <button class="btn btn-primary">Codificar</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+<%- include ('partials/footer.ejs') %>
